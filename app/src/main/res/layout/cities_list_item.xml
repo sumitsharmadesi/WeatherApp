@@ -41,8 +41,9 @@
             android:paddingStart="32dp"
             android:textColor="#000000"
             android:paddingEnd="32dp"
+            android:textStyle="bold"
             android:text="@{viewModel.getCityAt(position).date}"
-            android:textSize="16dp"
+            android:textSize="20dp"
             tools:text="Test" />
         <LinearLayout
             android:layout_width="match_parent"
@@ -59,7 +60,7 @@
             android:paddingStart="32dp"
             android:paddingEnd="32dp"
             android:text='@{"Max:"+viewModel.getCityAt(position).temp.max.toString()+"\u2103"}'
-            android:textSize="20dp"
+            android:textSize="16dp"
             tools:text="Test" />
             <TextView
                 android:id="@+id/txttempmin"
@@ -72,7 +73,7 @@
                 android:paddingStart="32dp"
                 android:paddingEnd="32dp"
                 android:text='@{"Min:"+viewModel.getCityAt(position).temp.min.toString()+"\u2103"}'
-                android:textSize="20dp"
+                android:textSize="16dp"
                 tools:text="Test" />
         </LinearLayout>
     </LinearLayout>
