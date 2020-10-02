@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="position"
+            type="java.lang.Integer" />
+        <variable
+            name="viewModel"
+            type="com.sumit.weatherapp.viewmodel.CitiesViewModel" />
+    </data>
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        card_view:cardCornerRadius="4dp"
+        card_view:cardElevation="4dp"
+        card_view:cardUseCompatPadding="true">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:background="#E6E6E6"
+        android:focusable="true"
+        android:onClick="@{() -> viewModel.onItemClick(position)}"
+        android:paddingStart="32dp"
+        android:paddingTop="16dp"
+        android:paddingEnd="32dp"
+        android:orientation="vertical"
+        android:paddingBottom="16dp">
+
+
+        <TextView
+            android:id="@+id/txtName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingStart="32dp"
+            android:textColor="#000000"
+            android:paddingEnd="32dp"
+            android:text="@{viewModel.getCityAt(position).date}"
+            android:textSize="16dp"
+            tools:text="Test" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+        <TextView
+            android:id="@+id/txttempmax"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textColor="#000000"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:paddingStart="32dp"
+            android:paddingEnd="32dp"
+            android:text='@{"Max:"+viewModel.getCityAt(position).temp.max.toString()+"\u2103"}'
+            android:textSize="20dp"
+            tools:text="Test" />
+            <TextView
+                android:id="@+id/txttempmin"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textColor="#000000"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:paddingStart="32dp"
+                android:paddingEnd="32dp"
+                android:text='@{"Min:"+viewModel.getCityAt(position).temp.min.toString()+"\u2103"}'
+                android:textSize="20dp"
+                tools:text="Test" />
+        </LinearLayout>
+    </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</layout>

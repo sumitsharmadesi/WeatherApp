@@ -1,0 +1,121 @@
+[
+  {
+    "id": 1259229,
+    "name": "Pune",
+    "state": "",
+    "country": "IN",
+    "coord": {
+      "lon": 73.855347,
+      "lat": 18.519569
+    }
+  },
+  {
+    "id": 292968,
+    "name": "Abu Dhabi",
+    "state": "",
+    "country": "AE",
+    "coord": {
+      "lon": 54.366669,
+      "lat": 24.466669
+    }
+  },{
+  "id": 292223,
+  "name": "Dubai",
+  "state": "",
+  "country": "AE",
+  "coord": {
+    "lon": 55.304722,
+    "lat": 25.258169
+  }
+},
+  {
+    "id": 1261481,
+    "name": "New Delhi",
+    "state": "",
+    "country": "IN",
+    "coord": {
+      "lon": 77.23114,
+      "lat": 28.61282
+    }
+  },
+  {
+    "id": 1275339,
+    "name": "Mumbai",
+    "state": "",
+    "country": "IN",
+    "coord": {
+      "lon": 72.847939,
+      "lat": 19.01441
+    }
+  },
+  {
+    "id": 2968815,
+    "name": "Paris",
+    "state": "",
+    "country": "FR",
+    "coord": {
+      "lon": 2.3486,
+      "lat": 48.853401
+    }
+  },
+  {
+    "id": 6167865,
+    "name": "Toronto",
+    "state": "",
+    "country": "CA",
+    "coord": {
+      "lon": -79.416298,
+      "lat": 43.700111
+    }
+  },
+  {
+    "id": 3882428,
+    "name": "Los Ángeles",
+    "state": "",
+    "country": "CL",
+    "coord": {
+      "lon": -72.349998,
+      "lat": -37.466671
+    }
+  },
+  {
+    "id": 1850147,
+    "name": "Tokyo",
+    "state": "",
+    "country": "JP",
+    "coord": {
+      "lon": 139.691711,
+      "lat": 35.689499
+    }
+  },
+  {
+    "id": 1880252,
+    "name": "Singapore",
+    "state": "",
+    "country": "SG",
+    "coord": {
+      "lon": 103.850067,
+      "lat": 1.28967
+    }
+  },
+  {
+    "id": 1882316,
+    "name": "Woodlands",
+    "state": "",
+    "country": "SG",
+    "coord": {
+      "lon": 103.776672,
+      "lat": 1.44444
+    }
+  },
+  {
+    "id": 3164603,
+    "name": "Venice",
+    "state": "",
+    "country": "IT",
+    "coord": {
+      "lon": 12.32667,
+      "lat": 45.43861
+    }
+  }
+]
